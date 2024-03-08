@@ -1,0 +1,101 @@
+
+<div class="header">
+    <app-toolbar></app-toolbar>
+</div>
+
+<div class="navBar">
+    <app-nav-bar></app-nav-bar>
+</div>
+
+<div class="conteiner">
+
+    <div class="cardTotal">
+        <div class="cardReceitaTotal">
+            <i class="fa-solid fa-hand-holding-dollar"
+                style="font-size: 20px; padding: 10px;">
+                {{ "R$ " + formatarNumero(totalReceita)}}
+            </i>
+
+        </div>
+        <div class="cardDespesaTotal">
+            <i class="fa-solid fa-sack-xmark icon-grande"
+                style="font-size: 20px; padding: 10px;">
+                {{ "R$ " +  formatarNumero(totalDespesa)}}
+            </i>
+
+        </div>
+        <div class="cardSaldoTotal">
+          
+            <i class="fa-solid fa-money-bill-trend-up icon-grande"
+                style="font-size: 20px; padding: 10px;">
+                {{"R$ " + formatarNumero(saldoFinal)}}
+            </i>
+
+        </div>
+
+    </div>
+    <div class="cardReceita">
+        <h1></h1>
+        <app-receita-env-button></app-receita-env-button>
+        <div class="scrollable-content">
+            <app-titulo-grid ></app-titulo-grid>
+        </div>
+    </div>
+    <div class="cardDespesa">
+        <div class="carDespesa">
+            <h1></h1>
+            <app-despesa-env-button></app-despesa-env-button>
+            <div class="scrollable-content">
+                <app-titulo-grid [tipo]="1"></app-titulo-grid>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <app-footer></app-footer>
+</footer>
+
+<div class="modal fade" id="staticBackdropR" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5"
+                    id="staticBackdropLabel">Receitas</h1>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <app-receita-env-button></app-receita-env-button>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+    data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5"
+                    id="staticBackdropLabel">Despesas</h1>
+                <button type="button" class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <app-titulo-form></app-titulo-form>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet />

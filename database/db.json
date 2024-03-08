@@ -1,0 +1,83 @@
+{
+  "categoria": [
+    {
+      "id": "36fc",
+      "descricao": "Salário "
+    },
+    {
+      "id": "01d8",
+      "descricao": "FGTS"
+    },
+    {
+      "id": "0dd3",
+      "descricao": "Férias "
+    },
+    {
+      "id": "d90d",
+      "descricao": "INSS"
+    },
+    {
+      "id": "8f98",
+      "descricao": "Nubank"
+    },
+    {
+      "id": "67cc",
+      "descricao": "Banco Do Brasil"
+    },
+    {
+      "id": "1d79",
+      "descricao": "teste"
+    },
+    {
+      "id": "cf15",
+      "descricao": "Empréstimos "
+    }
+  ],
+  "titulo": [
+    {
+      "id": "1732",
+      "tipo": 0,
+      "descricao": "Autocom",
+      "valor": 2500,
+      "categoria": "Salário ",
+      "dateTime": "2024-03-07",
+      "quitado": false
+    },
+    {
+      "id": "9af8",
+      "tipo": 1,
+      "descricao": "Cartao de Credito",
+      "valor": 950,
+      "categoria": "Banco Do Brasil",
+      "dateTime": "2024-03-07",
+      "quitado": true
+    },
+    {
+      "id": "d8e8",
+      "tipo": 1,
+      "descricao": "Cartao de Credito",
+      "valor": 2652.36,
+      "categoria": "Nubank",
+      "dateTime": "2024-03-07",
+      "quitado": false
+    },
+    {
+      "id": "d80a",
+      "tipo": 0,
+      "descricao": "Saque 🎂 ",
+      "valor": 2300,
+      "categoria": "FGTS",
+      "dateTime": "2024-03-08",
+      "quitado": false
+    },
+    {
+      "id": "5cb5",
+      "tipo": 1,
+      "descricao": "Divida",
+      "valor": 890,
+      "categoria": "Empréstimos ",
+      "dateTime": "2024-03-18",
+      "quitado": false
+    }
+  ]
+}

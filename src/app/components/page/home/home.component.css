@@ -1,0 +1,93 @@
+
+.example-container {
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border: 1px solid #555;
+}
+
+
+
+.header {
+ 
+  background-color: #1f29e6a4;
+  text-align: center;
+
+  color: white;
+  margin-bottom: 5px; /* Adiciona margem na parte inferior do cabeçalho */
+}
+
+.conteiner {
+  background-color: rgba(211, 231, 231, 0.26);
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between ;
+  align-items: center;
+  height:80%;
+}
+
+.icon-grande{
+  font: 24px;
+  padding: 3px;
+}
+
+.cardTotal{
+  display: flex;
+  flex-direction: row;
+}
+.cardDespesaTotal{
+  background-color: rgba(255, 0, 0, 0.681);
+}
+.cardReceitaTotal{
+  background-color: rgba(0, 128, 0, 0.681);
+}
+.cardSaldoTotal{
+  background-color: rgb(123, 121, 121);
+}
+
+.cardReceitaTotal,
+.cardDespesaTotal,
+.cardSaldoTotal{
+  font-size: larger;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 4px 9px 7px 1px rgba(0,0,0,0.32);
+-webkit-box-shadow: 4px 9px 7px 1px rgba(0,0,0,0.32);
+-moz-box-shadow: 4px 9px 7px 1px rgba(0,0,0,0.32);
+margin: 10px;
+}
+
+
+
+
+
+.cardReceita,
+.cardDespesa {
+ 
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  background-color: rgba(168, 170, 169, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 4px 9px 7px 1px rgba(0,0,0,0.32);
+-webkit-box-shadow: 4px 9px 7px 1px rgba(0,0,0,0.32);
+-moz-box-shadow: 4px 9px 7px 1px rgba(0,0,0,0.32);
+  overflow: auto;
+
+}
+
+.scrollable-content {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 10px; /* Adicione um espaçamento interno conforme necessário */
+}

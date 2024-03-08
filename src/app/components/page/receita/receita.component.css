@@ -1,0 +1,15 @@
+:host{
+    display: block;
+}
+
+.header{
+  
+    justify-content: center;
+    background-color: rgba(216, 222, 222, 0.133);
+   
+}
+.conteiner{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}

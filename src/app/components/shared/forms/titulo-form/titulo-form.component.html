@@ -1,0 +1,67 @@
+<div class="container">
+  <h3>teste</h3>
+  <div class="form">
+    <form [formGroup]="tituloForm" class="row gy-2 gx-3 align-items-start">
+      <div class="col-auto">
+        <label class="visually-hidden form-label" for="validationToolTip01">Descrição</label>
+        <input formControlName="descricao" id="validationToolTip01" type="text" class="form-control is-invalid"
+          id="autoSizingInput" placeholder="Descrição" required>
+      </div>
+      <div class="invalid-feedback" >
+        A descrição é obrigatória.
+      </div>
+      <div class="col-6">
+        <label class="visually-hidden" for="autoSizingInputGroup">Valor</label>
+        <div class="input-group">
+          <input formControlName="valor" type="number" class="form-control"
+            id="autoSizingInputGroup" placeholder="Valor">
+        </div>
+      </div>
+
+      <label class="visually-hidden" for="autoSizingInputGroup">Data</label>
+      <div class="input-group">
+        <input formControlName="dateTime" type="date"
+          class="form-control col-6"
+          id="autoSizingInputGroup" placeholder="date">
+      </div>
+      <div class="col-12">
+        <label>Categoria:</label>
+        <select class="form-select" formControlName="categoria">
+          <option class="form-control" *ngFor="let categoria of categorias"
+            [value]="categoria.descricao">{{categoria.descricao}}</option>
+        </select>
+      </div>
+    
+        <mat-accordion id="container-cateo"  class="categorias" multi="false" expanded="!modalFechar">
+          <mat-expansion-panel >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+               Cadastrar nova Categoria
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <app-categoria-form
+              (categoriaCriada)="onAttCategoria()"></app-categoria-form>
+          </mat-expansion-panel>
+          <mat-expansion-panel >
+          </mat-expansion-panel>
+        </mat-accordion>
+
+      
+
+      <div class="form-check ">
+        <label class="form-check-label" for="checkboxNoLabel">
+          Quitado
+        </label>
+        <input class="form-check-input " type="checkbox" value role="switch"
+          id="checkboxNoLabel" formControlName="quitado">
+      </div>
+
+      <div >
+        <button (click)="onSubmit()" type="submit"
+          class="btn btn-primary form-control col-auto">
+          Salvar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
